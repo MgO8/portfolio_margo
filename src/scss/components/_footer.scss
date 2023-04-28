@@ -2,22 +2,13 @@
 
 .footer {
   background-position: bottom;
-  height: 438px;
-  color: $black;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 140%;
 
   @include media-breakpoint-down("lg") {
-    height: 215px;
   }
 
   @include media-breakpoint-down("md") {
-    height: 200px;
   }
 
   @include media-breakpoint-down("sm") {
-    height: 220px;
   }
 }

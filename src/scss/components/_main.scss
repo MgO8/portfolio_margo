@@ -1,11 +1,34 @@
 @import "../variables";
 
 .main {
-  position: relative;
   height: 100vh;
 
   &__container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__soon {
+    color: red;
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-size: 36px;
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    padding-bottom: 12px;
+  }
+
+  &__contact {
+    padding-bottom: 12px;
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(32, 46, 128) !important;
   }
 
   @include media-breakpoint-down("lg") {
@@ -15,8 +38,5 @@
   }
 
   @include media-breakpoint-down("sm") {
-    height: 600px;
-    max-height: none;
-    min-height: auto;
   }
 }
