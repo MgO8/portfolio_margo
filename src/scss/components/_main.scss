@@ -29,6 +29,7 @@
     font-weight: 900;
     font-size: 20px;
     color: rgb(32, 46, 128) !important;
+    width: fit-content;
   }
 
   @include media-breakpoint-down("lg") {
