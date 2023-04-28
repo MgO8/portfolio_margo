@@ -1,0 +1,22 @@
+@import "../variables";
+
+.main {
+  position: relative;
+  height: 100vh;
+
+  &__container {
+    height: 100%;
+  }
+
+  @include media-breakpoint-down("lg") {
+  }
+
+  @include media-breakpoint-down("md") {
+  }
+
+  @include media-breakpoint-down("sm") {
+    height: 600px;
+    max-height: none;
+    min-height: auto;
+  }
+}

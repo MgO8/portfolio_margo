@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "es2015",
+    "outDir": "dist/js",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "sourceMap": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/js/*"
+      ]
+    }
+  },
+  "include": [
+    "src/js/**/*"
+  ],
+  "compileOnSave": true
+}

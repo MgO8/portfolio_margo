@@ -1,0 +1,70 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+// @import "../../node_modules/bootstrap/scss/mixins/grid";
+@import "../../node_modules/bootstrap/scss/mixins/grid-framework";
+
+@mixin make-container($gutter: $grid-gutter-width) {
+    width: 100%;
+    padding-right: $gutter / 2;
+    padding-left: $gutter / 2;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+
+.container,
+.container-fluid {
+    @include make-container();
+
+    @include media-breakpoint-only("xl") {
+        padding-right: map-get($grid-gutters, "xl") !important;
+        padding-left: map-get($grid-gutters, "xl") !important;
+    }
+
+    @include media-breakpoint-only("lg") {
+        padding-right: map-get($grid-gutters, "lg") !important;
+        padding-left: map-get($grid-gutters, "lg") !important;
+    }
+
+    @include media-breakpoint-only("md") {
+        padding-right: map-get($grid-gutters, "md") !important;
+        padding-left: map-get($grid-gutters, "md") !important;
+    }
+    @include media-breakpoint-only("sm") {
+        padding-right: map-get($grid-gutters, "sm") !important;
+        padding-left: map-get($grid-gutters, "sm") !important;
+    }
+    @include media-breakpoint-only("xs") {
+        padding-right: map-get($grid-gutters, "xs") !important;
+        padding-left: map-get($grid-gutters, "xs") !important;
+        min-width: 100%;
+    }
+}
+@each $breakpoint, $container-max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+        @extend .container-fluid;
+    }
+
+    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {
+        %responsive-container-#{$breakpoint} {
+            max-width: $container-max-width;
+        }
+
+        // Extend each breakpoint which is smaller or equal to the current breakpoint
+        $extend-breakpoint: true;
+
+        @each $name, $width in $grid-breakpoints {
+            @if ($extend-breakpoint) {
+                .container#{breakpoint-infix($name, $grid-breakpoints)} {
+                    @extend %responsive-container-#{$breakpoint};
+                }
+
+                // Once the current breakpoint is reached, stop extending
+                @if ($breakpoint == $name) {
+                    $extend-breakpoint: false;
+                }
+            }
+        }
+    }
+}

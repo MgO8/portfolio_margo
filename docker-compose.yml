@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+  main:
+    build:
+      context: .
+      dockerfile: './Dockerfile'
+    user: "1000"
+    ports:
+      - "0.0.0.0:3000:3000"
+      - "127.0.0.1:3001:3001"
+    volumes:
+      - './src:/app/src'
+      - './dist:/app/dist'
+    command: "./node_modules/.bin/gulp serve"
+    environment:
+      - NODE_ENV=development

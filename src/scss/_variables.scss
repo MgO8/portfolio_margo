@@ -1,0 +1,49 @@
+/*
+ * colors
+ */
+
+$black: #000000;
+
+/*
+ * fonts
+ */
+
+$base-font-size: 16px;
+$base-font-family: "Helvetica";
+
+$header-z-index: 3;
+$header-height-desk: 116px;
+$header-height-mob: 40px;
+
+$container-padding-sm: 16px;
+$container-padding-md: 40px;
+
+/*
+ * bootstrap variables
+ */
+
+$grid-gutter-width: 120px;
+
+$grid-gutters: (
+  xs: 16px,
+  sm: 40px,
+  md: 72px,
+  lg: 70px,
+  xl: 60px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 1024px,
+  lg: 1440px,
+  xl: 1800px,
+);
+
+$container-max-widths: (
+  xs: 0,
+  sm: map-get($grid-breakpoints, "sm"),
+  md: map-get($grid-breakpoints, "md"),
+  lg: map-get($grid-breakpoints, "lg"),
+  xl: map-get($grid-breakpoints, "xl"),
+);

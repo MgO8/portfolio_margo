@@ -1,0 +1,38 @@
+{
+  "main_page": {
+    "title": "Margo",
+    "header": {
+      "links": {
+        "main": "index.html",
+        "portfolio": {
+          "title": "портфолио",
+          "link": "projects"
+        },
+        "about_us": {
+          "title": "о нас",
+          "link": "about_us"
+        },
+        "contacts": {
+          "title": "контакты",
+          "link": "contacts"
+        },
+        "curr_lang": "ru"
+      }
+    },
+    "footer": {
+      "mobile": {
+        "href": "tel:+79504100222",
+        "title": "+7 (950) 410 02 22"
+      },
+      "site_link": {
+        "href": "https://github.com/42-px",
+        "title": "github"
+      },
+      "email": {
+        "href": "mailto:42@42px.ru",
+        "title": "42@42px.ru"
+      },
+      "address": "Россия, г. Красноярск, ул. Алексеева 17"
+    }
+  }
+}
