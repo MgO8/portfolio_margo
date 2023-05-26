@@ -1,14 +1,23 @@
 @import "../variables";
 
 .main {
-  height: 100vh;
   background-color: $bg-gray;
 
-  &__container {
+  &__photo-block {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
+  }
+
+  &__photo {
+    width: 100%;
+    max-width: 1254px;
+  }
+
+  &__info {
+    padding-bottom: 50px;
   }
 
   &__soon {
