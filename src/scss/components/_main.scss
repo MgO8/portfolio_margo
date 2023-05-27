@@ -4,16 +4,46 @@
   background-color: $bg-gray;
 
   &__photo-block {
-    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
   }
 
   &__photo {
     width: 100%;
     max-width: 1254px;
+    height: fit-content;
+  }
+
+  &__photo-container {
+    position: relative;
+  }
+
+  &__name {
+    position: absolute;
+    right: -100px;
+    top: 80px;
+    font-size: 100px;
+    font-style: initial;
+    font-weight: bold;
+
+    @include media-breakpoint-down("sm") {
+      display: none;
+    }
+  }
+
+  &__dev {
+    position: absolute;
+    left: -110px;
+    top: 200px;
+    font-size: 60px;
+    font-style: initial;
+    font-weight: bold;
+
+    @include media-breakpoint-down("sm") {
+      display: none;
+    }
   }
 
   &__info {
