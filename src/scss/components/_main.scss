@@ -3,6 +3,12 @@
 .main {
   background-color: $bg-gray;
 
+  &__container {
+    @include media-breakpoint-down("xs") {
+      padding-top: $header-height-mob;
+    }
+  }
+
   &__photo-block {
     display: flex;
     justify-content: center;
@@ -13,7 +19,19 @@
   &__photo {
     width: 100%;
     max-width: 1254px;
-    height: fit-content;
+
+    @include media-breakpoint-down("xs") {
+      display: none;
+    }
+  }
+
+  &__photo-mob {
+    display: none;
+
+    @include media-breakpoint-down("xs") {
+      display: block;
+      width: 100%;
+    }
   }
 
   &__photo-container {
@@ -28,8 +46,12 @@
     font-style: initial;
     font-weight: bold;
 
-    @include media-breakpoint-down("sm") {
-      display: none;
+    @include media-breakpoint-down("xs") {
+      top: 0;
+      left: 50%;
+      right: 0;
+      transform: translate(-50%, 0);
+      font-size: 50px;
     }
   }
 
@@ -41,8 +63,12 @@
     font-style: initial;
     font-weight: bold;
 
-    @include media-breakpoint-down("sm") {
-      display: none;
+    @include media-breakpoint-down("xs") {
+      bottom: 10px;
+      left: 50%;
+      top: unset;
+      transform: translate(-50%, 0);
+      font-size: 50px;
     }
   }
 
