@@ -1,0 +1,52 @@
+@import "../variables";
+
+.table-content {
+    background-color: $gray-light;
+    height: 100vh;
+
+    &__container {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+
+    &__hr {
+        border-top: 3px dotted white;
+        border-bottom: unset;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 40px;
+        margin-top: 10px;
+
+        @include media-breakpoint-down("sm") {
+            margin-right: 80px;
+        }
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    &__left-item {
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+
+    &__right-title {
+        writing-mode: vertical-lr;
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
