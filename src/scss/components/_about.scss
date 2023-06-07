@@ -1,6 +1,9 @@
 @import "../variables";
 
 .about {
+    height: 100vh;
+    background-color: $gray-light;
+
     &__container {
         padding-bottom: 50px;
         padding-top: 50px;
