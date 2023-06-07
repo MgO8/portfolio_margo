@@ -1,0 +1,12 @@
+@import "../variables";
+
+.about-block {
+    background-color: $bg-gray;
+    height: 100vh;
+
+    &__container {
+        display: flex;
+        height: 100%;
+        position: relative;
+    }
+}

@@ -81,36 +81,6 @@
     }
   }
 
-  &__info {
-    padding-bottom: 50px;
-
-    @include media-breakpoint-down("xs") {
-      padding-top: 50px;
-    }
-  }
-
-  &__soon {
-    color: red;
-    padding-top: 100px;
-  }
-
-  &__title {
-    font-size: 36px;
-    padding-bottom: 24px;
-  }
-
-  &__text {
-    padding-bottom: 12px;
-  }
-
-  &__contact {
-    padding-bottom: 12px;
-    font-weight: 900;
-    font-size: 20px;
-    color: rgb(101, 206, 224) !important;
-    width: fit-content;
-  }
-
   @include media-breakpoint-down("lg") {
   }
 

@@ -31,13 +31,25 @@
         justify-content: center;
     }
 
-    &__left-item {
+    &__link {
+        color: inherit;
         white-space: nowrap;
         display: flex;
         flex-direction: row;
         width: 100%;
         margin-bottom: 40px;
         font-size: 20px;
+        cursor: pointer;
+        height: 20px;
+        transition: all ease 0.5s;
+        transition-property: all;
+
+        &:hover {
+            font-size: 30px;
+            -webkit-text-shadow: 2px 2px 2px #000;
+            -moz-text-shadow: 2px 2px 2px #000;
+            text-shadow: 2px 2px 2px #000;
+        }
     }
 
     &__right-title {
