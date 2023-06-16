@@ -7,6 +7,7 @@ html {
   font-family: $base-font-family;
   color: $white;
   background-color: $bg-gray;
+  scroll-behavior: smooth;
 }
 
 body.scroll-enable {
