@@ -1,0 +1,27 @@
+@import "../variables";
+
+.portfolio-42px {
+    height: 100vh;
+    background-color: $gray-light;
+
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+
+    &__gif {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 700px;
+    }
+
+    &__title {
+        font-size: 100px;
+        text-shadow: 5px 5px 3px gray;
+        position: absolute;
+        z-index: $portfolio-title-z-index;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}

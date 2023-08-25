@@ -44,10 +44,12 @@
     font-size: 100px;
     font-style: initial;
     font-weight: bold;
+    letter-spacing: 20px;
 
     @include media-breakpoint-down("sm") {
       font-size: 70px;
       right: -70px;
+      letter-spacing: 10px;
     }
 
     @include media-breakpoint-down("xs") {
