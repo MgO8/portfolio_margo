@@ -42,6 +42,11 @@
         margin-bottom: 10px;
     }
 
+    &__item-description {
+        max-width: 205px;
+        text-align: end;
+    }
+
     &__first-item {
         display: flex;
         width: fit-content;
