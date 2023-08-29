@@ -1,7 +1,7 @@
 @import "../variables";
 
 .about {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $gray-light;
 
     &__container {

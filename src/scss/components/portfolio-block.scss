@@ -2,7 +2,7 @@
 
 .portfolio-block {
     background-color: $bg-gray;
-    height: 100vh;
+    min-height: 100vh;
 
     &__title-container {
         display: flex;
@@ -20,6 +20,10 @@
         padding-top: 20px;
         display: flex;
         justify-content: space-between;
+
+        @include media-breakpoint-down("sm") {
+            flex-direction: column;
+        }
     }
 
     &__item-title {
