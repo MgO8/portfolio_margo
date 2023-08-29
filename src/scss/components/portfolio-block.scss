@@ -18,6 +18,8 @@
 
     &__items {
         padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
     }
 
     &__item-title {

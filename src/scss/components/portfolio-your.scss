@@ -1,0 +1,64 @@
+@import "../variables";
+
+.portfolio-your {
+    height: 100vh;
+    background-color: $gray-light;
+
+    &__container {
+        position: relative;
+        height: 100%;
+    }
+
+    &__gif {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 700px;
+
+        @include media-breakpoint-down("sm") {
+            width: 500px;
+        }
+
+        @include media-breakpoint-down("xs") {
+        }
+    }
+
+    &__title {
+        font-size: 100px;
+        text-shadow: 5px 5px 3px gray;
+        position: absolute;
+        z-index: $portfolio-title-z-index;
+        top: 50%;
+        transform: translate(0, -50%);
+        color: $white !important;
+
+        @include media-breakpoint-down("sm") {
+            font-size: 80px;
+        }
+
+        @include media-breakpoint-down("xs") {
+            font-size: 60px;
+        }
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 50px;
+    }
+
+    &__desc {
+        max-width: 500px;
+        text-align: end;
+        line-height: 20px;
+    }
+
+    &__contact {
+        padding-bottom: 12px;
+        font-weight: 900;
+        font-size: 20px;
+        color: rgb(101, 206, 224) !important;
+        width: fit-content;
+    }
+}
