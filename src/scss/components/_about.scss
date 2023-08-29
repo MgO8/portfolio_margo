@@ -7,11 +7,7 @@
     &__container {
         padding-bottom: 50px;
         padding-top: 50px;
-    }
-
-    &__soon {
-        color: red;
-        padding-top: 100px;
+        height: 100%;
     }
 
     &__title {
@@ -21,5 +17,6 @@
 
     &__text {
         padding-bottom: 12px;
+        line-height: 20px;
     }
 }
